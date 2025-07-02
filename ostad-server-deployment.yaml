@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ostad-server
-  namespace: your-namespace-name
+  namespace: ysantosh-barai
 spec:
   replicas: 1
   selector:
