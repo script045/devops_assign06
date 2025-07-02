@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: ostad-ui
-          image: your-dockerhub/ostad-ui:latest  # Build & push to Docker Hub
+          image: devscript045/ostad-ui:latest  # Build & push to Docker Hub
           ports:
             - containerPort: 5173

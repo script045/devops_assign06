@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: ostad-server
-          image: your-dockerhub/ostad-server:latest
+          image: devscript045/ostad-server:latest
           ports:
             - containerPort: 3000
           env:
