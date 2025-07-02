@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ostad-ui
+  namespace: santosh-barai
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ostad-ui
+  template:
+    metadata:
+      labels:
+        app: ostad-ui
+    spec:
+      containers:
+        - name: ostad-ui
+          image: your-dockerhub/ostad-ui:latest  # Build & push to Docker Hub
+          ports:
+            - containerPort: 5173
